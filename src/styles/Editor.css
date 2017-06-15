@@ -1,0 +1,28 @@
+.editorContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.htmlEditor {
+  flex-grow: 1;
+  flex-basis: 50%;
+
+}
+
+.cssEditor {
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.ifRender {
+  flex-basis: 95%;
+  margin-top: 40px;
+}
+
+@media all and (max-width: 500px) {
+  .editorContainer {
+    flex-direction: column;
+  }
+}
