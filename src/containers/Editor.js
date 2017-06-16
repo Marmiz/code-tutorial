@@ -12,8 +12,8 @@ class Editor extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      htmlCode: '<!-- html -->\n<h1 class="myClass">The result</h1>',
-      cssCode: '/* css */\n.myClass {\n text-align: center;\n}'
+      htmlCode: this.props.seedHtml,
+      cssCode: this.props.seedCss
     }
   }
 

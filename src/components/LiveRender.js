@@ -2,13 +2,11 @@ import React, {Component} from 'react'
 
 class LiveRender extends Component {
   componentDidMount(){
-    this.updateContent()
-    this.updateStyle()
+    this.updateRender()
   }
 
-  componentWillReceiveProps(nextProps){
-    this.updateContent()
-    this.updateStyle()
+  componentDidUpdate(prevProps, prevState) {
+    this.updateRender()
   }
 
   updateContent(){
@@ -24,6 +22,13 @@ class LiveRender extends Component {
     x.head.innerHTML = code
   }
 
+  // debounce the re-rendering function
+  updateRender = debounce(()=> {
+    console.log('ciccio')
+    this.updateContent()
+    this.updateStyle()
+  },1000)
+
   render(){
     const ifStyle = {
       width: '100%',
@@ -35,10 +40,28 @@ class LiveRender extends Component {
             title="ifRender"
             style={ifStyle}
             ref="iframe"
+            id="if"
           />
         </div>
     )
   }
 }
+
+
+// http://davidwalsh.name/javascript-debounce-function
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
 
 export default LiveRender
