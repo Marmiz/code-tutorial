@@ -1,0 +1,14 @@
+.Instructions_wrapper {
+  background-color: #222;
+  color: white;
+  min-height: 30vh;
+}
+
+.Instructions_title {
+  margin: 0px;
+}
+
+.Instructions_description, p {
+  margin: 0px;
+  padding: 16px;
+}
