@@ -11,9 +11,13 @@ class Instructions extends Component {
     render () {
       return (
         <div className="Instructions_wrapper">
-          <h2 className="Instructions_title">{this.props.title}</h2>
-          <p className="Instructions_description" dangerouslySetInnerHTML={this.getRawMarkup()}></p>
-          <ControlPanel {...this.props} />
+          <div className="Instructions_div">
+            <h2 className="Instructions_title">{this.props.title}</h2>
+            <p className="Instructions_description" dangerouslySetInnerHTML={this.getRawMarkup()}></p>
+          </div>
+          <div className="ControlPanel_div">
+            <ControlPanel {...this.props} />
+          </div>
         </div>
       )
     }
