@@ -2,6 +2,20 @@
   background-color: #222;
   color: white;
   min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Instructions_div {
+  flex: 2 0 auto;
+  justify-content: space-around;
+  min-height: 20vh;
+}
+
+.ControlPanel_div {
+  flex: 2 0 auto;
+  justify-content: space-between;
+  min-height: 20%;
 }
 
 .Instructions_title {

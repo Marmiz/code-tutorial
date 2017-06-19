@@ -1,0 +1,58 @@
+.ControlPanel_wrapper {
+  min-height: 25vh;
+}
+
+.NavigationButton_wrapper {
+  margin: 10px auto;
+}
+
+.Button {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 1rem;
+  height: 2.25em;
+  padding-bottom: calc(0.37em - 1px);
+  padding-bottom: calc(0.37em - 1px);
+  position: relative;
+  vertical-align: top;
+  background-color: white;
+  border-color: #dbdbdb;
+  color: #363636;
+  cursor: pointer;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.Navigation_btn {
+  margin: auto 10px;
+  border-color: #00d1b2;
+  color: #00d1b2;
+  min-width: 10rem;
+}
+
+.Disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.Test_btn {
+  border-color: #ff5370;
+  color: #ff5370;
+}
+
+.Message_wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+  max-width: 60px;
+}
+
+.TestResult_Message {
+  border: 1px solid transparent;
+  border-color: white;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+}

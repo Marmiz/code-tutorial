@@ -1,7 +1,7 @@
 export const challengeTitle = `Lesson 1`
 
 export const challengeDescription = `This is some default description.
-with some
+with some code formatted
 \`\`\`html
 <h1>ciccio</h1>
 \`\`\`
