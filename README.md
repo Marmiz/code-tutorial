@@ -8,6 +8,8 @@ A slightly opinionated template version using Redux and Chai for in browser test
 
 Use this as a starting point to develop your own challenge if you like how I've designed the lessons and test.
 
+![screenshot](https://dl.dropboxusercontent.com/s/jw5jem8j81hy7vx/redux_test_template.png?dl=0)
+
 ##### Redux
 
 So far it's a basic implementation of React-Redux.
