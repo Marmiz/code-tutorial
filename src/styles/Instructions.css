@@ -23,6 +23,7 @@
 }
 
 .Instructions_description, p {
-  margin: 0px;
+  margin: auto;
+  max-width: 90vw;
   padding: 16px;
 }
