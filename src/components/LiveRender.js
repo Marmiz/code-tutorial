@@ -24,7 +24,6 @@ class LiveRender extends Component {
 
   // debounce the re-rendering function
   updateRender = debounce(()=> {
-    console.log('ciccio')
     this.updateContent()
     this.updateStyle()
   },1000)

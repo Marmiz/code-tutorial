@@ -18,20 +18,20 @@ class ControlPanel extends Component {
   }
   render() {
     // TODO: edit this when adding new challenges - they are based 0 so lesson1 is 0
-    const lastLesson = 1
+    const lastLesson = 2
     return (
       <div className="ControlPanel_wrapper">
         <div className="NavigationButton_wrapper">
+          {this.props.lesson > 0 &&
+            <button className="Button Navigation_btn" onClick={ () => this.props.decrementLesson()}>
+              Previous Lesson
+            </button>
+          }
           {this.props.lesson < lastLesson &&
             <button className="Button Navigation_btn" onClick={ () => this.props.incrementLesson()}>
               Next Lesson
             </button>
           }
-        {this.props.lesson > 0 &&
-          <button className="Button Navigation_btn" onClick={ () => this.props.decrementLesson()}>
-            Previous Lesson
-          </button>
-        }
         </div>
         <div className="TestButton_wrapper">
           <button className="Button Test_btn" onClick={() => this.runTest(this.props.id)}>Test Code</button>

@@ -6,6 +6,9 @@ const testCode = (id) => {
   let message = ''
 
   switch(id) {
+    case 0:
+      message = 'Are you a master of Flexbox yet?'
+    break;
     case 1:
       message = testLesson1()
     break;

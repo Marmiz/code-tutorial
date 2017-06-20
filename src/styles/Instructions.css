@@ -26,4 +26,19 @@
   margin: auto;
   max-width: 90vw;
   padding: 16px;
+  letter-spacing: 0.03em;
+  font-size: 1.1em;
+}
+
+.Instructions_description > p > a {
+  border: 1px solid transparent;
+  border-color: white;
+  color: #B86BFF;
+  font-size: 1.2em;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.Instructions_description > p > a:hover {
+  background-color: white;
 }
