@@ -43,16 +43,17 @@
   color: #ff5370;
 }
 
-.Message_wrapper {
+.Message_Wrapper {
   display: flex;
   justify-content: center;
   margin: 15px auto;
-  max-width: 60px;
+  max-width: 60vw;
 }
 
 .TestResult_Message {
-  border: 1px solid transparent;
-  border-color: white;
   font-size: 20px;
   letter-spacing: 0.03em;
+  border: 1px solid transparent;
+  border-color: white;
+  width: 60vw;
 }

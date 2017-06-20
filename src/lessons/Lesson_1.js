@@ -1,11 +1,12 @@
 export const challengeTitle = `Lesson 1`
 
-export const challengeDescription = `This is some default description.
-with some code formatted
+export const challengeDescription = `This is some default description with some code formatted.
+
+For example you can start by adding \`myClass\` to the header
 \`\`\`html
-<h1>ciccio</h1>
+<h1>The Result</h1>
 \`\`\`
-as well `
+and see if the test passes. `
 
 export const seedHtml=`<!-- html -->
 <h1>The result</h1>`

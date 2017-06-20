@@ -3,11 +3,129 @@
 ###### A project to teach basic html and css directly in browser.
 ---
 
-work in progress.
+#### Redux-Test-Template
+A slightly opinionated template version using Redux and Chai for in browser testing.
+
+Use this as a starting point to develop your own challenge if you like how I've designed the lessons and test.
+
+##### Redux
+
+So far it's a basic implementation of React-Redux.
+
+It's mainly used to brig the `lessons state` across the app and use the two navigation buttons to fire `INCREMENT` and `DECREMENT` actions.
+
+##### Lessons
+
+- **LessonWrapper.js**
+
+This is the wrapper to import all the lesson and collect them inside a Data array to be passed and used from the app:
+
+```js
+import * as Lesson_1 from './Lesson_1'
+
+const Data = [
+  {
+    id: 1,
+    title: Lesson_1.challengeTitle,
+    description: Lesson_1.challengeDescription,
+    seedHtml: Lesson_1.seedHtml,
+    seedCss: Lesson_1.seedCss
+  }
+]
+
+export default Data
+
+```
+
+- **Lesson_1**
+
+This is where we export the text to be displayed.
+
+**challengeTitle** is the title that will be displayed
+
+**challengeDescription** will be treated as markdown so you can use that syntax to write the challenges easier
+
+**seedHtml** ans **seedCss** are the initial code to be displayed in their respective editor
+
+```js
+export const challengeTitle = `Lesson 1`
+
+export const challengeDescription = `This is some default description with some code formatted.
+
+For example you can start by adding \`myClass\` to the header
+\`\`\`html
+<h1>The Result</h1>
+\`\`\`
+and see if the test passes. `
+
+export const seedHtml=`<!-- html -->
+<h1>The result</h1>`
+
+export const seedCss=`/* css */
+.myClass {
+ text-align: center;
+ color: red
+}`
+```
+
+##### Tests
+
+- **test-code.js**
+
+Pulls in the individual test lessons for each challenge, and execute the test thanks to the `state lesson` parameter passed from redux.
+
+```js
+import testLesson1 from './Test_Lesson_1'
+
+const testCode = (id) => {
+
+  let message = ''
+
+  switch(id) {
+    case 1:
+      message = testLesson1()
+    break;
+    default:
+      message ='something went wrong'
+  }
+
+  return message
+}
 
 
-#### Template branch
-Basic html css editor with live render feature. Ready to be adapted to your needs.
+export default testCode
+```
+
+- **Test_Lesson_**
+
+Use Chai assertion library to test directly in the browser the correctness of the code by verifying that some elements are present in the result iframe and return a message that will be passed from `test-code` to the application to be displayed.
+
+```js
+import chai, {expect} from 'chai'
+chai.use(require('chai-dom'))
+
+const testLesson1 = () => {
+  // select the iframe content
+  let iframe = document.getElementById('if')
+  let content = iframe.contentDocument || iframe.contentWindow.document
+  let body = content.getElementsByTagName('body')[0]
+
+  // message to return --> success by default unless will be overwritten by an error
+  let message = 'All tests passed'
+
+  // actual test
+  try {
+    expect(body.querySelector('h1')).to.have.class('myClass')
+  }
+  catch (err) {
+    return message = `Your html should have an h1 with class 'myClass'`
+  }
+  return message
+}
+
+export default testLesson1
+```
+
 
 
 
@@ -33,7 +151,7 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
+See the section about [running tests](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests) for more information.
 
 ### `npm run build`
 

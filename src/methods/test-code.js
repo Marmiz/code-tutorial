@@ -1,5 +1,6 @@
 import testLesson1 from './Test_Lesson_1'
 
+// id = store.lessons
 const testCode = (id) => {
 
   let message = ''
