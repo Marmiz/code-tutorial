@@ -22,6 +22,10 @@
   margin: 0px;
 }
 
+.Instructions_description {
+  text-align: justify;
+}
+
 .Instructions_description, p {
   margin: auto;
   max-width: 90vw;
@@ -41,4 +45,29 @@
 
 .Instructions_description > p > a:hover {
   background-color: white;
+}
+
+code {
+  /*border: 1px solid transparent;
+  border-color: #B86BFF;*/
+  color: #B86BFF;
+  padding: 5px;
+}
+
+.Instructions_description > pre {
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+}
+
+.Instructions_description > pre > code {
+  border: 1px solid transparent;
+  border-color: white;
+  background-color: #fdf5db;
+  padding: 1em;
+  color: #212121;
+}
+
+.Instructions_description > ul > li {
+  text-align: justify;
 }

@@ -1,6 +1,6 @@
 export const challengeTitle = `Welcome`
 
-export const challengeDescription = `Through this lessons will walk over some basic technique to create some common components in every web page: a header, a container for the page content and finally we will be creating a simple layout.
+export const challengeDescription = `Through this lessons will walk over some basic technique to create some common components in every web page: a header, a column system for the page content and finally we will be creating a simple layout.
 
 We can achieve this through using many library that will help you easing the process, but since we are learning we will use CSS flexbox's property to achieve our goals by ourself.
 

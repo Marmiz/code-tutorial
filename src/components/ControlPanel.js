@@ -18,7 +18,7 @@ class ControlPanel extends Component {
   }
   render() {
     // TODO: edit this when adding new challenges - they are based 0 so lesson1 is 0
-    const lastLesson = 2
+    const lastLesson = 10
     return (
       <div className="ControlPanel_wrapper">
         <div className="NavigationButton_wrapper">

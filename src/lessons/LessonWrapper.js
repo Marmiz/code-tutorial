@@ -1,7 +1,14 @@
 import * as Welcome from './Welcome'
-import * as Lesson_1 from './Lesson_1'
-import * as Lesson_2 from './Lesson_2'
-
+// header
+import * as Lesson_1 from './header/Lesson_1'
+import * as Lesson_2 from './header/Lesson_2'
+import * as Lesson_3 from './header/Lesson_3'
+import * as Lesson_4 from './header/Lesson_4'
+import * as Lesson_5 from './header/Lesson_5'
+import * as Lesson_6 from './header/Lesson_6'
+import * as Lesson_7 from './header/Lesson_7'
+// grid
+import * as Lesson_8 from './grid/Lesson_8'
 const Data = [
   {
     id: 0,
@@ -23,6 +30,48 @@ const Data = [
     description: Lesson_2.challengeDescription,
     seedHtml: Lesson_2.seedHtml,
     seedCss: Lesson_2.seedCss
+  },
+  {
+    id: 3,
+    title: Lesson_3.challengeTitle,
+    description: Lesson_3.challengeDescription,
+    seedHtml: Lesson_3.seedHtml,
+    seedCss: Lesson_3.seedCss
+  },
+  {
+    id: 4,
+    title: Lesson_4.challengeTitle,
+    description: Lesson_4.challengeDescription,
+    seedHtml: Lesson_4.seedHtml,
+    seedCss: Lesson_4.seedCss
+  },
+  {
+    id: 5,
+    title: Lesson_5.challengeTitle,
+    description: Lesson_5.challengeDescription,
+    seedHtml: Lesson_5.seedHtml,
+    seedCss: Lesson_5.seedCss
+  },
+  {
+    id: 6,
+    title: Lesson_6.challengeTitle,
+    description: Lesson_6.challengeDescription,
+    seedHtml: Lesson_6.seedHtml,
+    seedCss: Lesson_6.seedCss
+  },
+  {
+    id: 7,
+    title: Lesson_7.challengeTitle,
+    description: Lesson_7.challengeDescription,
+    seedHtml: Lesson_7.seedHtml,
+    seedCss: Lesson_7.seedCss
+  },
+  {
+    id: 8,
+    title: Lesson_8.challengeTitle,
+    description: Lesson_8.challengeDescription,
+    seedHtml: Lesson_8.seedHtml,
+    seedCss: Lesson_8.seedCss
   }
 ]
 

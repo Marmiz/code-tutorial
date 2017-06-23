@@ -12,7 +12,12 @@ class LiveRender extends Component {
   updateContent(){
     const iframe = this.refs.iframe
     const x = iframe.contentDocument
-    x.body.innerHTML = this.props.htmlCode
+    x.body.innerHTML = this.parseHtml(this.props.htmlCode)
+  }
+
+  parseHtml(code){
+    let newcode = code.replace(/(<a)/g, '<a onclick="return false"')
+    return newcode
   }
 
   updateStyle(){
