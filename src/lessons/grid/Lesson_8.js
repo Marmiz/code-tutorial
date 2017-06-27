@@ -33,6 +33,7 @@ export const seedHtml=`<!-- html -->
 export const seedCss=`/* css */
 .container {
   background-color: #E4FDFF;
+  display: flex;
 }
 
 .content {

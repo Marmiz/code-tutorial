@@ -71,3 +71,8 @@ code {
 .Instructions_description > ul > li {
   text-align: justify;
 }
+
+.Instructions_description img {
+  height: 200px;
+  width: 33%;
+}

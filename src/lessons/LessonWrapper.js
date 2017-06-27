@@ -9,6 +9,11 @@ import * as Lesson_6 from './header/Lesson_6'
 import * as Lesson_7 from './header/Lesson_7'
 // grid
 import * as Lesson_8 from './grid/Lesson_8'
+import * as Lesson_9 from './grid/Lesson_9'
+import * as Lesson_10 from './grid/Lesson_10'
+// layout
+import * as Lesson_11 from './layout/Lesson_11'
+
 const Data = [
   {
     id: 0,
@@ -72,6 +77,27 @@ const Data = [
     description: Lesson_8.challengeDescription,
     seedHtml: Lesson_8.seedHtml,
     seedCss: Lesson_8.seedCss
+  },
+  {
+    id: 9,
+    title: Lesson_9.challengeTitle,
+    description: Lesson_9.challengeDescription,
+    seedHtml: Lesson_9.seedHtml,
+    seedCss: Lesson_9.seedCss
+  },
+  {
+    id: 10,
+    title: Lesson_10.challengeTitle,
+    description: Lesson_10.challengeDescription,
+    seedHtml: Lesson_10.seedHtml,
+    seedCss: Lesson_10.seedCss
+  },
+  {
+    id: 11,
+    title: Lesson_11.challengeTitle,
+    description: Lesson_11.challengeDescription,
+    seedHtml: Lesson_11.seedHtml,
+    seedCss: Lesson_11.seedCss
   }
 ]
 

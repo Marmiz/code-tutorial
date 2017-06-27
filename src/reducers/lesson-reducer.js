@@ -1,4 +1,4 @@
-export default (state = 8, action) => {
+export default (state = 11, action) => {
   if (action.type === 'INCREMENT') {
     return state + 1
   } else if (action.type === 'DECREMENT') {

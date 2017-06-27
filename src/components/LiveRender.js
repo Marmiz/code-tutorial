@@ -16,7 +16,7 @@ class LiveRender extends Component {
   }
 
   parseHtml(code){
-    let newcode = code.replace(/(<a)/g, '<a onclick="return false"')
+    let newcode = code.replace(/(<a )/g, '<a onclick="return false"')
     return newcode
   }
 
