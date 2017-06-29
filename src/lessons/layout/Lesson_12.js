@@ -1,6 +1,15 @@
-export const challengeTitle = ` Page Layout - 12`
+export const challengeTitle = ` 2 Column Layout - Lesson 12`
 
-export const challengeDescription = ``
+export const challengeDescription = `Since we approach this problem with the 'mobile first' in mind, now it's time to desing our 2 colum layout for medium size screen.
+
+We are gonna declare a \`@media\` query that dictate the position of the two elements we want to align on the same row: \`artice\` and \`aside\` so that the main \`section\` will stay on a single row.
+
+In order for the two elements to align we simply have to revert the \`flex-basis\` property we gave early and let flexbox figure out how much space they need to occupy.
+
+- Declare a \`media\` query that target screens with \`min-width: 600px\`
+- Inside that media query create an entry for \`.aside\` and \`.article\`
+- assing the two classes a \`flex-grow\` value of \`1\` and a \`flex-basis\` of \`auto\`
+`
 
 export const seedHtml = `<!-- html -->
 <div class="wrapper">
@@ -9,10 +18,10 @@ export const seedHtml = `<!-- html -->
     <section class="section">
         <p>Section</p>
     </section>
-    <article class="article">
+    <article class="article" id="article">
         Article
     </article>
-    <aside class="aside">Aside</aside>
+    <aside class="aside" id="aside">Aside</aside>
     <footer class="footer">Footer</footer>
 </div>`
 
@@ -25,32 +34,12 @@ export const seedCss = `/* css */
 
 
 /* We tell all items to be 100% width */
-.header, .section, .nav, .aside, .footer, .article {
+/* Switch to a different format for test purpose */
+.wrapper > * {
   flex: 1 100%;
   padding: 0.35rem;
 }
 
-@media all and (min-width: 600px) {
- .aside, .article { flex: 1  0 auto; }
-}
-
-@media all and (min-width: 1000px) {
-    .section {
-        flex: 3 0 0;
-    }
-    .aside {
-        order: 1;
-    }
-    .section{
-        order : 2;
-    }
-    .article{
-        order: 3;
-    }
-    .footer{
-        order: 4;
-    }
-}
 
 /* extra CSS for better display */
 body {
@@ -71,11 +60,13 @@ body {
     background-color: #00d1b2;
 }
 
-.article {
+/* Switch to a different format for test purpose */
+#article {
     background-color: #23d160;
 }
 
-.aside {
+/* Switch to a different format for test purpose */
+#aside {
     background-color: #68EDC6;
 }
 

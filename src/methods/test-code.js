@@ -5,6 +5,8 @@ import testLesson5 from './header_test/Test_Lesson_5'
 import testLesson7 from './header_test/Test_Lesson_7'
 import testLesson8 from './grid_test/Test_Lesson_8'
 import testLesson9 from './grid_test/Test_Lesson_9'
+import testLesson11 from './layout_test/Test_Lesson_11'
+import testLesson12 from './layout_test/Test_Lesson_12'
 
 // id = store.lessons
 const testCode = (id) => {
@@ -45,6 +47,12 @@ const testCode = (id) => {
     case 10:
       message = 'Have you tried to resize the screen to see the different behaviour of the divs?'
       break;
+    case 11:
+      message = testLesson11()
+      break;
+    case 12:
+      message = testLesson12()
+    break;
     default:
       message ='something went wrong'
   }

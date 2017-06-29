@@ -18,9 +18,9 @@ We are gonna start from mobile first and we will build up the rest of the layout
 ---
 
 To achieve a mobile full-width layout we need  to have the main \`wrapper\`
-to have a display flex property with a row layout. Then give all the elements in the page a width of 100%.
+to have a display flex property with a row layout. Then give all the elements in the page a width of 100% thanks to the \`flex-basis\` property.
 
-- In the stylesheet declare the \`wrapper\` class display property as \`flex\`
+- In the stylesheet declare the \`wrapper\` class \`display\` property as \`flex\`
 - Again for \`wrapper\` set \`flex-direction\` as \`row\` and \`flex-wrap\` as \`wrap\`
 - For all the elements give a \`flex-grow\` value of \`1\` and a \`flex-basis\` of \`100%\`
 `
@@ -42,42 +42,43 @@ export const seedHtml = `<!-- html -->
 export const seedCss = `/* css */
 .wrapper {
   /* wrapper css here */
-  display: flex;
-  flex-flow: row wrap;
-  text-align: center;
 }
 
 /* We tell all items to be 100% width */
 .header, .section, .nav, .aside, .footer, .article {
   /* css for all the elements */
-  flex: 1 100%;
-
 }
 
 /* extra CSS for better display */
-body p{
+body {
   margin: 0;
 }
 .header {
     background-color: #ff470f;
+    padding: 0.35rem;
 }
 
 .nav {
     background-color: 	#ffdd57;
+    padding: 0.35rem;
 }
 
 .section {
     background-color: #00d1b2;
+    padding: 0.35rem;
 }
 
 .article {
     background-color: #23d160;
+    padding: 0.35rem;
 }
 
 .aside {
     background-color: #68EDC6;
+    padding: 0.35rem;
 }
 
 .footer {
     background-color: #b86bff;
+    padding: 0.35rem;
 }`

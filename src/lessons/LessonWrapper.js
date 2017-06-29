@@ -13,6 +13,7 @@ import * as Lesson_9 from './grid/Lesson_9'
 import * as Lesson_10 from './grid/Lesson_10'
 // layout
 import * as Lesson_11 from './layout/Lesson_11'
+import * as Lesson_12 from './layout/Lesson_12'
 
 const Data = [
   {
@@ -98,6 +99,13 @@ const Data = [
     description: Lesson_11.challengeDescription,
     seedHtml: Lesson_11.seedHtml,
     seedCss: Lesson_11.seedCss
+  },
+  {
+    id: 12,
+    title: Lesson_12.challengeTitle,
+    description: Lesson_12.challengeDescription,
+    seedHtml: Lesson_12.seedHtml,
+    seedCss: Lesson_12.seedCss
   }
 ]
 
