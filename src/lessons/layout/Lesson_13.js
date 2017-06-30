@@ -1,6 +1,28 @@
-export const challengeTitle = ` Page Layout - 13`
+export const challengeTitle = `3 Column Layout - Lesson 13`
 
-export const challengeDescription = ``
+export const challengeDescription = `Now That we have tackled the two column layout; it's time to pass to the 3 column  design for bigger screens.
+
+Same as we did before, we are gonna create the layout using the aid of \`media query\` and flexbox's \`order\` property.
+
+- Declare a \`media\` query that target screens with \`min-width: 1000px\`
+- Inside that media query create an entry for \`.section\`
+- Give to the newly \`.section\` class a \`flex\` property of \`3 0 0\`
+
+\`flex\` is the shorter version of \`flex-grow flex-shrink flex-basis\`.
+By giving  \`.section flex: 3 0 0\` we are deciding that Section should take three time the space as Article and Aside. (Remember that we gave a \`flex\` property to those element in the previous challenge)
+
+However, as you can see \`section\` is the leftmost element, while we want it to be at the center of our page.
+To do so we can simply use the \`order\` property to display the elements in this order: article, section, aside, footer.
+
+Inside the same \`media query\` created before add an instance for the following classes to modify the order:
+
+- \`.aside\` should have \`order: 1\`
+- \`.section\` should have \`order: 2\`
+- \`.article\` should have \`order: 3\`
+- \`.footer\` should have \`order: 4\`
+
+
+`//end description
 
 export const seedHtml = `<!-- html -->
 <div class="wrapper">
@@ -42,7 +64,7 @@ export const seedCss = `/* css */
         order: 1;
     }
     .section{
-        order : 2;
+        order: 2;
     }
     .article{
         order: 3;

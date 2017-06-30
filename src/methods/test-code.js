@@ -7,6 +7,7 @@ import testLesson8 from './grid_test/Test_Lesson_8'
 import testLesson9 from './grid_test/Test_Lesson_9'
 import testLesson11 from './layout_test/Test_Lesson_11'
 import testLesson12 from './layout_test/Test_Lesson_12'
+import testLesson13 from './layout_test/Test_Lesson_13'
 
 // id = store.lessons
 const testCode = (id) => {
@@ -52,6 +53,9 @@ const testCode = (id) => {
       break;
     case 12:
       message = testLesson12()
+    break;
+    case 13:
+      message = testLesson13()
     break;
     default:
       message ='something went wrong'

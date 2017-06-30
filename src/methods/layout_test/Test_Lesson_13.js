@@ -1,7 +1,7 @@
 import chai, {expect} from 'chai'
 chai.use(require('chai-dom'))
 
-const testLesson12 = () => {
+const testLesson13 = () => {
   // select the iframe content
   let iframe = document.getElementById('if')
   let content = iframe.contentDocument || iframe.contentWindow.document
@@ -23,26 +23,42 @@ const testLesson12 = () => {
   }
   try {
     expect(head.querySelector('style')).to.contain.text('@media')
-    expect(head.querySelector('style')).to.contain.text('min-width: 600px')
+    expect(head.querySelector('style')).to.contain.text('min-width: 1000px')
   }
   catch (e) {
-    return message = `Declare a media query and target screen with min-width: 600px`
+    return message = `Declare a media query and target screen with min-width: 1000px`
   }
   try {
-    expect(head.querySelector('style')).to.contain.text('.aside')
-    expect(head.querySelector('style')).to.contain.text('.article')
-  }
-  catch(e) {
-    return message = `Remember to delcare a class for aside and article inside the media query`
-  }
-  try {
-    expect(head.querySelector('style')).to.contain.text('flex-grow: 1')
-    expect(head.querySelector('style')).to.contain.text('flex-basis: auto')
+    expect(head.querySelector('style')).to.contain.text('flex: 3 0 0')
   }
   catch (e) {
-    return message = `Don't forget to assing to the two new classes the properties of flex-grow: 1 and flex-basis: auto`
+    return message = `Remember to give section the property flex: 3 0 0`
+  }
+  try {
+    expect(head.querySelector('style')).to.contain.text('order: 1')
+  }
+  catch (e) {
+    return message = `Remember to add order: 1 to .article`
+  }
+  try {
+    expect(head.querySelector('style')).to.contain.text('order: 2')
+  }
+  catch (e) {
+    return message = `Remember to add order: 2 to .section`
+  }
+  try {
+    expect(head.querySelector('style')).to.contain.text('order: 3')
+  }
+  catch (e) {
+    return message = `Remember to add order: 3 to .article`
+  }
+  try {
+    expect(head.querySelector('style')).to.contain.text('order: 4')
+  }
+  catch (e) {
+    return message = `Remember to add order: 4 to .footer`
   }
   return message
 }
 
-export default testLesson12
+export default testLesson13
