@@ -8,7 +8,6 @@ import { connect } from 'react-redux'
 import { incrementLesson, decrementLesson} from '../actions/lesson-actions'
 
 class App extends Component {
-
   mapProps() {
       return Data[this.props.lesson]
   }
@@ -16,7 +15,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Default Html-Css editor with live render</h2>
+          <a
+            href="https://twitter.com/intent/tweet?screen_name=akailbiondo">
+            <i className="fa fa-twitter"></i>@akailbiondo</a>
+          <a href="https://github.com/Marmiz/code-tutorial/issues/new" target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-github"></i>Report a bug</a>
         </div>
         <div className="App-instructions">
           <Instructions {...this.mapProps()} {...this.props} />

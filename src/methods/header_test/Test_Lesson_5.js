@@ -13,6 +13,7 @@ const testLesson5 = () => {
 
   // tests
    try {
+     // eslint-disable-next-line
     expect(body.querySelector('#parent')).to.exist
   }
   catch (e) {

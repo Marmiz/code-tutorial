@@ -12,6 +12,7 @@ const testLesson2 = () => {
   let message = 'All tests passed'
   // actual test
   try {
+    // eslint-disable-next-line
     expect(body.querySelector('#parent')).to.exist
   }
   catch (err) {

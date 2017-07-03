@@ -36,7 +36,7 @@ class LiveRender extends Component {
   render(){
     const ifStyle = {
       width: '100%',
-      height: 'auto'
+      height: '400px'
     }
     return (
         <div>
