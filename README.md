@@ -1,9 +1,8 @@
 # Code tutorial
-
-## A project to teach basic html and css directly in browser.
+A project to teach basic html and css directly in browser.
 
 ![welcome_screen](https://dl.dropboxusercontent.com/s/xoqjle2kcnbvlso/welcome_readme.png?dl=0)
----
+
 
 This is a step by step simple tutorial that aims to show a few basic concepts about creating your own html elements,
 focusing mainly on CSS's Flexbox and layout in general.
@@ -18,6 +17,7 @@ If you want to make your own challenges you are welcome to grab one of the templ
 If you have found this tutorial useful, fun, or you have some feedback to share you can always reach me on twitter at [@akailbiondo](https://twitter.com/akailbiondo)
 
 <3
+
 
 ---
 ## Redux-Test-Template
