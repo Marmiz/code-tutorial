@@ -16,7 +16,7 @@ If you want to make your own challenges you are welcome to grab one of the templ
 
 If you have found this tutorial useful, fun, or you have some feedback to share you can always reach me on twitter at [@akailbiondo](https://twitter.com/akailbiondo)
 
-<3
+*lessThanThree*
 
 
 ---
