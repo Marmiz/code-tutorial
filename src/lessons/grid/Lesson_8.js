@@ -1,9 +1,9 @@
-export const challengeTitle = `A simple grid system with flexbox.`
+export const challengeTitle = `A simple grid system with flexbox - Grid - Lesson 8`
 
 export const challengeDescription = `
   As we saw in the header example before, it's fairly simple to align item side by side with flexbox.
 
-  We can use the same principles to create a simple grid layout for out content.
+  We can use the same principles to create a simple grid layout for our content.
 
   In general the main elements that compose a grid system are a container and a content component. Bootstrap refers to them as "row" and "col" for example.
 
@@ -17,23 +17,11 @@ export const challengeDescription = `
 `
 
 export const seedHtml=`<!-- html -->
-<div class="container">
-  <div class="content">
-    <p>1</p>
-  </div>
-  <div class="content">
-    <p>2</p>
-  </div>
-  <div class="content">
-    <p>3</p>
-  </div>
-</div>
 `
 
 export const seedCss=`/* css */
 .container {
   background-color: #E4FDFF;
-  display: flex;
 }
 
 .content {

@@ -1,4 +1,4 @@
-export const challengeTitle = `Lesson 3`
+export const challengeTitle = `Our first display:flex - Lesson 3`
 
 export const challengeDescription = `In doing so you have noticed that the three elements are one below each other. So how do we manage to position it like a navbar making them all ocupying one line?
 

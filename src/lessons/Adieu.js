@@ -2,10 +2,14 @@ export const challengeTitle = `...and they lived forever displayed after`
 
 export const challengeDescription = `So far we had just scratched the surface of what you can achieve with a proper usage of flexbox and CSS.
 
-My goal in this few lessons was to stimulate your critical thinking and show you that, sometimes, it's not that hard to rely on your own skills instead of using someone else.
+My goal in this few lessons was to stimulate your critical thinking and show you that, sometimes, CSS positioning can be made easy.
 
 
-Thanks for sticking till the end of this short journey, if you have any comment or feedback you can always reach me on twitter \`@akailbiondo\`, and of course you are always welcome here to play with the examples or refresh the knowledge.`
+Thanks for sticking till the end of this journey, if you have any comment or feedback you can always reach me on twitter \`@akailbiondo\`, and of course you are always welcome here to play with the examples.
+
+Also don't forget to check out the \`Github repo\` to see how this tutorial was made, and grab a template to code a brand new one in case you want to make a tutorial of your own
+
+Happy coding.`
 
 export const seedHtml=`<!-- html -->
 <h1>The world is but a canvas</h1>

@@ -1,6 +1,6 @@
 export const challengeTitle = `Learn about flex-grow - Lesson 5`
 
-export const challengeDescription  = `So what if we now want to add an element that stays at the left of the navbar, like a 'Home' link for example.
+export const challengeDescription  = `Our elements are now displayed nicely on the right, but what if we want to add an element that stays at the left of the navbar, like a 'Home' link for example?
 
 Turns out that with flexbox is fairly easy to do. Since we are pushing all our elements on the right with \`justify-content: flex-end;\` we can instruct an element to grow and takes up all the spaces it has available.
 We can achieve this by specifing the \`flex-grow\` property on the child element we want to be bigger.
@@ -26,7 +26,7 @@ Here's a quick example:
 \`\`\`
 
 Now go ahead and try to create an alement that takes up more space.
-- Inside the \`parent div\` add a new div, nest inside a link with a text *Home*
+- Inside \`parent div\` add a new div, nest inside it a new link with a text *Home*
 - Make sure this is now the first div inside the \`parent\`
 - Add to this div a class called \`grow\`
 - In the CSS section, add the \`grow\` class and give it a \`flex-grow\` value of \`1\`

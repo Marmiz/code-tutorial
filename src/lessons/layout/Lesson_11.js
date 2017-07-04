@@ -1,24 +1,48 @@
-export const challengeTitle = ` Page Layout - Mobile First`
+export const challengeTitle = `Mobile First - Page Layout - Lesson 11`
 
 export const challengeDescription = `We are gonna use [HTML5 semantic](https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5) tags to create a barebone layout for our webpage.
 
-Planning is important when deciding ordering and layout, since a well organized stucture from the start ensure a cleaner and easier to debug code.
+Planning ahead is important when deciding ordering and layout, since a well organized stucture from the start ensure a cleaner and easier to debug code.
 
-We are gonna start from mobile first and we will build up the rest of the layout.
-- for mobile we will have the items displayed in the full width
-- for medium scren we will have a 2 colums display
+We are gonna start from mobile first, from there we will build up the rest of the layout.
+- for mobile we will have the items displayed in the full width as rows
+- for medium scren we will have the "main" content split over 2 colums
 - for big screen we will spilt the content over 3 colums
 
 ---
 
-![mobile](https://dl.dropboxusercontent.com/s/aw0egotg6s0ec8i/mobile-layout.png?dl=0)
-![2-col](https://dl.dropboxusercontent.com/s/xrce7vbjcgjysxv/2col-new.png?dl=0)
-![3-col](https://dl.dropboxusercontent.com/s/pdlz5wn6h6v116z/3col-new.png?dl=0)
+To achieve a mobile full-width layout we need  to have the main \`wrapper\`
+to have a property of display:flex with a row layout. Then give all the elements in the page a width of 100% thanks to the \`flex-basis\` property.
+
+For example in a markup like this one:
+\`\`\`
+<div class="wrapper">
+  <div class="nav">
+  </div>
+  <div class="section">
+  </div>
+  <div class="footer">
+  </div>
+</div>
+\`\`\`
+We can have the main wrapper like:
+\`\`\`
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+\`\`\`
+And then instructs its children to take up 100% of the available space each:
+\`\`\`
+.nav, .section, .footer {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+\`\`\`
+
 
 ---
-
-To achieve a mobile full-width layout we need  to have the main \`wrapper\`
-to have a display flex property with a row layout. Then give all the elements in the page a width of 100% thanks to the \`flex-basis\` property.
 
 - In the stylesheet declare the \`wrapper\` class \`display\` property as \`flex\`
 - Again for \`wrapper\` set \`flex-direction\` as \`row\` and \`flex-wrap\` as \`wrap\`

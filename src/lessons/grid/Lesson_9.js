@@ -1,4 +1,4 @@
-export const challengeTitle = `Setting the content size - Grid system`
+export const challengeTitle = `Setting the content size - Grid - Lesson 9`
 
 export const challengeDescription = `If you are thinking about a grid system is probably because you want certain content inside your page to occupy a defined space.
 To achieve so we can use the flexbox ability to set the width of elements based on the remaining space on the page.

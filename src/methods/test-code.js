@@ -58,7 +58,7 @@ const testCode = (id) => {
       message = testLesson13()
     break;
     case 14:
-     message = 'Have you checked the example below?'
+     message = 'Have you checked the awesome example below?'
      break;
     default:
       message ='something went wrong - if the issue persist feel free to report a bug.'

@@ -27,20 +27,20 @@ const testLesson11 = () => {
     expect(head.querySelector('style')).to.contain.text('display: flex')
   }
   catch (e) {
-    return message = `Don't forget about the display: flex property`
+    return message = `Don't forget about the display: flex property for the .wrapper class`
   }
   try {
     expect(head.querySelector('style')).to.contain.text('flex-direction: row')
   }
   catch (e) {
     console.log(e)
-    return message = `Remember to set the flex-direction to row`
+    return message = `Remember to set the flex-direction to row in .wrapper`
   }
   try {
     expect(head.querySelector('style')).to.contain.text('flex-wrap: wrap')
   }
   catch (e) {
-    return message = `Remember about flew-wrap: wrap`
+    return message = `Remember about flew-wrap: wrap for .wrapper`
   }
   try {
     expect(head.querySelector('style')).to.contain.text('flex-grow: 1')

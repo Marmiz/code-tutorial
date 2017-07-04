@@ -1,4 +1,4 @@
-export const challengeTitle = `Some CSS - lesson 4`
+export const challengeTitle = `Some extra CSS - Lesson 4`
 
 export const challengeDescription = `Woah! What happened here!
 

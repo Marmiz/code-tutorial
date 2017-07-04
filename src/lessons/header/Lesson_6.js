@@ -1,7 +1,7 @@
 export const challengeTitle = 'Responsiveness - Lesson 6'
 
 export const challengeDescription = `
-  There is one thing we haven't talked about yet: responsivness. How can we combine flexbox layouts for different screen sizes?
+  There is one thing we haven't talked about yet: responsivness. How can we achieve a flexible layout for different screen sizes?
 
   We can combine different properties with CSS [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) to suits our design choices.
 

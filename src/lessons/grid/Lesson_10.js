@@ -1,4 +1,4 @@
-export const challengeTitle = `Lesson 10`
+export const challengeTitle = `Media queries examples - Grid - Lesson 10`
 
 export const challengeDescription = `Combining what we saw in the previous chapter we can combine the \`width\` and \`flex\` property with \`media queries\` to create a layout that changes its behaviour for different screen sizes.
 

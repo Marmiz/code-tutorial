@@ -38,7 +38,7 @@ const testLesson13 = () => {
     expect(head.querySelector('style')).to.contain.text('order: 1')
   }
   catch (e) {
-    return message = `Remember to add order: 1 to .article`
+    return message = `Remember to add order: 1 to .aside`
   }
   try {
     expect(head.querySelector('style')).to.contain.text('order: 2')

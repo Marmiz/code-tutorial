@@ -53,7 +53,7 @@ const testLesson5 = () => {
     expect(head.querySelector('style')).to.contain.text('flex-grow: 1;')
   }
   catch (e) {
-    return message = e.message
+    return message = '.grow should have flex-grow:1 declared inside'
   }
 
   return message;

@@ -54,10 +54,10 @@ class Editor extends Component {
     return (
       <div className="editorContainer">
         <div className="htmlEditor">
-          <AceEditor value={this.state.htmlCode} onChange={this.updateHtmlCode} theme="monokai" mode="html" />
+          <AceEditor editorProps={{$blockScrolling: Infinity}} value={this.state.htmlCode} onChange={this.updateHtmlCode} theme="monokai" mode="html" />
         </div>
         <div className="cssEditor">
-          <AceEditor value={this.state.cssCode} onChange={this.updateCssCode}
+          <AceEditor editorProps={{$blockScrolling: Infinity}} value={this.state.cssCode} onChange={this.updateCssCode}
             theme="tomorrow" mode="css" />
         </div>
         <div className="ifRender">

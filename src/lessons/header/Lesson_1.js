@@ -1,4 +1,4 @@
-export const challengeTitle = `Get confortable with the tools`
+export const challengeTitle = `Get confortable with the tools - Lesson 1`
 
 export const challengeDescription = `Before we dive in, I'd like you to try the two editors below and see how they behave.
 

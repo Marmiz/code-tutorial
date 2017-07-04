@@ -1,8 +1,8 @@
-export const challengeTitle = `3 Column Layout - Lesson 13`
+export const challengeTitle = `3 Column Layout - Page Layout - Lesson 13`
 
 export const challengeDescription = `Now That we have tackled the two column layout; it's time to pass to the 3 column  design for bigger screens.
 
-Same as we did before, we are gonna create the layout using the aid of \`media query\` and flexbox's \`order\` property.
+As we did before, we are gonna create the layout using the aid of \`media query\` and flexbox's \`order\` property.
 
 - Declare a \`media\` query that target screens with \`min-width: 1000px\`
 - Inside that media query create an entry for \`.section\`
@@ -54,24 +54,6 @@ export const seedCss = `/* css */
 
 @media all and (min-width: 600px) {
  .aside, .article { flex: 1  0 auto; }
-}
-
-@media all and (min-width: 1000px) {
-    .section {
-        flex: 3 0 0;
-    }
-    .aside {
-        order: 1;
-    }
-    .section{
-        order: 2;
-    }
-    .article{
-        order: 3;
-    }
-    .footer{
-        order: 4;
-    }
 }
 
 /* extra CSS for better display */

@@ -21,17 +21,17 @@ const testLesson3 = () => {
     expect(head.querySelector('style')).to.contain.text('display: flex')
   }
   catch (err) {
-    return message = `Make sure to set dsplay: flex`
+    return message = `Make sure to set dsplay: flex in the .navbar class`
   }
   try {
     expect(head.querySelector('style')).to.contain.text('flex-direction: row')
   } catch (e) {
-    return message = `flex-direction should be set to row`
+    return message = `.navbar should have flex-direction set to row`
   }
   try {
     expect(head.querySelector('style')).to.contain.text('justify-content: flex-end')
   } catch (e) {
-    return message = `justify-content should be flex-end`
+    return message = `.navbar should have justify-content as flex-end`
   }
   return message
 }

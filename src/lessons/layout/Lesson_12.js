@@ -1,10 +1,46 @@
-export const challengeTitle = ` 2 Column Layout - Lesson 12`
+export const challengeTitle = `2 Column Layout - Page Layout - Lesson 12`
 
 export const challengeDescription = `Since we approach this problem with the 'mobile first' in mind, now it's time to desing our 2 colum layout for medium size screen.
 
 We are gonna declare a \`@media\` query that dictate the position of the two elements we want to align on the same row: \`artice\` and \`aside\` so that the main \`section\` will stay on a single row.
 
 In order for the two elements to align we simply have to revert the \`flex-basis\` property we gave early and let flexbox figure out how much space they need to occupy.
+
+---
+For example in a case similar as the one we saw before:
+\`\`\`
+<div class="wrapper">
+  <div class="nav">
+  </div>
+  <div class="section">
+  </div>
+  <div class="footer">
+  </div>
+</div>
+\`\`\`
+Where the elements span across the whole length of the page:
+\`\`\`
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.nav, .section, .footer {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+\`\`\`
+We can declare a media query that target two of the elements that we want to be side by side by reverting to \`flex-basis: auto\`
+\`\`\`
+@media all and (min-width: 750px) {
+  .section, .footer {
+    flex-grow : 1;
+    flex-basis: auto;
+  }
+}
+\`\`\`
+
+---
 
 - Declare a \`media\` query that target screens with \`min-width: 600px\`
 - Inside that media query create an entry for \`.aside\` and \`.article\`

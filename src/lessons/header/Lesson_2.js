@@ -1,4 +1,4 @@
-export const challengeTitle=`Create the elements for the Navbar`
+export const challengeTitle=`Create the elements for the Navbar - Lesson 2`
 
 export const challengeDescription= `As you read in the [flexbox article](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) it's important to define clearly what is a parent container and what will be the children elements.
 

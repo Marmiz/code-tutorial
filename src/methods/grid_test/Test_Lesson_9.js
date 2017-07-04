@@ -42,7 +42,7 @@ const testLesson9 = () => {
     expect(head.querySelector('style')).to.contain.text('width: 66.66%')
   }
   catch (err) {
-    return message = `'twoThird' should be '66.66%' wide, two third`
+    return message = `'twoThird' should be '66.66%' wide`
   }
   return message
 }

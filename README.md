@@ -1,20 +1,37 @@
 # Code tutorial
 
 ###### A project to teach basic html and css directly in browser.
+
+![welcome_screen](https://dl.dropboxusercontent.com/s/xoqjle2kcnbvlso/welcome_readme.png?dl=0)
 ---
 
-#### Redux-Test-Template
-A slightly opinionated template version using Redux and Chai for in browser testing.
+This is a step by step simple tutorial that aims to show a few basic concepts about creating your own html elements,
+focusing mainly on CSS's Flexbox and layout in general.
+
+The goal here is not to make you a master, but provide you with easy step-by-step examples that, hopefully, should let you feel less frightened when you'll start with a text editor, a blank screen and a head full of ideas waiting to become alive.
+
+Simply follow along the lessons and execute the test to be sure you are on track with the exercise requirements.
+
+
+If you want to make your own challenges you are welcome to grab one of the templates branches and develop your ideas.
+
+If you have found this tutorial useful, fun, or you have some feedback to share you can always reach me on twitter at [@akailbiondo](https://twitter.com/akailbiondo)
+
+<3
+
+---
+### Redux-Test-Template
+A slightly opinionated template using Redux and Chai for in browser testing.
 
 Use this as a starting point to develop your own challenge if you like how I've designed the lessons and test.
 
-##### Redux
+#### Redux
 
 So far it's a basic implementation of React-Redux.
 
 It's mainly used to brig the `lessons state` across the app and use the two navigation buttons to fire `INCREMENT` and `DECREMENT` actions.
 
-##### Lessons
+#### Lessons
 
 - **LessonWrapper.js**
 
@@ -68,7 +85,7 @@ export const seedCss=`/* css */
 }`
 ```
 
-##### Tests
+#### Tests
 
 - **test-code.js**
 

@@ -8,6 +8,9 @@ import { connect } from 'react-redux'
 import { incrementLesson, decrementLesson} from '../actions/lesson-actions'
 
 class App extends Component {
+  componentWillReceiveProps(){
+    window.scrollTo(0, 0)
+  }
   mapProps() {
       return Data[this.props.lesson]
   }
