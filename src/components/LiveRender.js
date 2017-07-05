@@ -6,15 +6,21 @@ class LiveRender extends Component {
     this.updateStyle()
   }
 
-  componentWillReceiveProps(nextProps){
+  componentDidUpdate(prevProps, prevState) {
     this.updateContent()
     this.updateStyle()
+  }
+
+  // avoid unwanted link behaviour in the iframe
+  parseHtml(code){
+    let newcode = code.replace(/(<a )/g, '<a onclick="return false"')
+    return newcode
   }
 
   updateContent(){
     const iframe = this.refs.iframe
     const x = iframe.contentDocument
-    x.body.innerHTML = this.props.htmlCode
+    x.body.innerHTML = this.parseHtml(this.props.htmlCode)
   }
 
   updateStyle(){

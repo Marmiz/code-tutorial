@@ -2,10 +2,14 @@ import React, {Component} from 'react'
 import LiveRender from '../components/LiveRender'
 import '../styles/Editor.css'
 
-// import CodeMirror stuff
-import CodeMirror from 'react-codemirror'
-import  'codemirror/mode/htmlmixed/htmlmixed.js'
-import 'codemirror/mode/css/css.js'
+// Ace editor stuff
+// import brace from 'brace';
+import AceEditor from 'react-ace';
+
+import 'brace/mode/html';
+import 'brace/mode/css';
+import 'brace/theme/monokai';
+import 'brace/theme/tomorrow';
 
 
 class Editor extends Component {
@@ -19,6 +23,7 @@ class Editor extends Component {
 
   componentWillMount() {
     this.updateCssCode(this.state.cssCode)
+    this.updateHtmlCode(this.state.htmlCode)
   }
 
   updateHtmlCode = (newCode) => {
@@ -34,24 +39,14 @@ class Editor extends Component {
   }
 
   render() {
-    const optionsHtml = {
-      lineNumbers: true,
-      theme: 'material',
-      mode: 'htmlmixed'
-    }
-    const optionsCss = {
-      lineNumbers: true,
-      theme: 'solarized',
-      mode: 'css'
-    }
     return (
       <div className="editorContainer">
         <div className="htmlEditor">
-          <CodeMirror value={this.state.htmlCode} onChange={this.updateHtmlCode} options={optionsHtml} />
+          <AceEditor editorProps={{$blockScrolling: Infinity}} value={this.state.htmlCode} onChange={this.updateHtmlCode} theme="monokai" mode="html" />
         </div>
         <div className="cssEditor">
-          <CodeMirror value={this.state.cssCode} onChange={this.updateCssCode}
-            options={optionsCss} />
+          <AceEditor editorProps={{$blockScrolling: Infinity}} value={this.state.cssCode} onChange={this.updateCssCode}
+            theme="tomorrow" mode="css" />
         </div>
         <div className="ifRender">
           <LiveRender {...this.state} />

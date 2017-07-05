@@ -21,6 +21,10 @@
   margin-top: 40px;
 }
 
+#brace-editor {
+  width: auto !important;
+}
+
 @media all and (max-width: 500px) {
   .editorContainer {
     flex-direction: column;
