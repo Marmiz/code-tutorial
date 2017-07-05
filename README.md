@@ -1,6 +1,8 @@
 # Code tutorial
 A project to teach basic html and css directly in browser.
 
+You can see a live demo here: https://marmiz.github.io/code-tutorial/
+
 ![welcome_screen](https://dl.dropboxusercontent.com/s/xoqjle2kcnbvlso/welcome_readme.png?dl=0)
 
 
