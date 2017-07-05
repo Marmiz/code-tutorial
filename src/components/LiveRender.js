@@ -9,10 +9,16 @@ class LiveRender extends Component {
     this.updateRender()
   }
 
+  // avoid unwanted link behaviour in the iframe
+  parseHtml(code){
+  let newcode = code.replace(/(<a )/g, '<a onclick="return false"')
+  return newcode
+  }
+
   updateContent(){
     const iframe = this.refs.iframe
     const x = iframe.contentDocument
-    x.body.innerHTML = this.props.htmlCode
+    x.body.innerHTML = this.parseHtml(this.props.htmlCode)
   }
 
   updateStyle(){
@@ -24,7 +30,6 @@ class LiveRender extends Component {
 
   // debounce the re-rendering function
   updateRender = debounce(()=> {
-    console.log('ciccio')
     this.updateContent()
     this.updateStyle()
   },1000)

@@ -7,7 +7,4 @@ export const challengeDescription= `To make things easier this lessons text are 
 
 export const seedHtml = `<!--html-->`
 
-export const seedCss = `/*css*/
-div {
-  display: flex;
-}`
+export const seedCss = `/*css*/`
