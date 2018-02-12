@@ -5,7 +5,7 @@ export const challengeDescription = `Before we dive in, I'd like you to try the 
 As you can see there is a header and a class already declared for you.
 But as you notice the class is not applied to the \`h1\` yet.
 
-Why don't you assing \`myClass\` to the header and see the result yourself?
+Why don't you assign \`myClass\` to the header and see the result yourself?
 
 `
 
